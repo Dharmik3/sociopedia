@@ -10,7 +10,13 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import authRoutes from './routes/auth.js'
 import userRoutes from './routes/users.js'
+import postRoutes from './routes/posts.js'
 import { register } from './controllers/auth.js';
+import {createPost} from './controllers/posts.js'
+import { verifyToken } from './middleware/auth.js'
+import User from './models/User.js';
+import Post from './models/Post.js';
+import { users, posts } from './data/index.js';
 
 // middleware config
 const __filename = fileURLToPath(import.meta.url);
@@ -41,11 +47,14 @@ const upload = multer({ storage });
 
 // routes with files
 app.post('/auth/register', upload.single('picture'), register)
+app.post('/posts',verifyToken,upload.single('picture'),createPost)
 
 // routes
 app.use('/auth', authRoutes);
 // user routes
 app.use('/users', userRoutes);
+// posts routes
+app.use('/posts', postRoutes);
 // mongoose setup
 
 const PORT = process.env.PORT || 6001;
@@ -56,6 +65,10 @@ mongoose.connect(MONGO_URL, {
     useUnifiedTopology: true,
 }).then(() => {
     app.listen(PORT, () => console.log(`Server listening port: ${PORT}`))
+
+    // add data ine time
+    // User.insertMany(users);
+    // Post.insertMany(posts);
 }).catch((err) => {
     console.log(err);
 })
