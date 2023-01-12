@@ -69,7 +69,7 @@ mongoose.connect(MONGO_URL, {
     // add data ine time
     // User.insertMany(users);
     // Post.insertMany(posts);
-}).catch((err) => {
+}).catch((err) =>  {
     console.log(err);
 })
 
