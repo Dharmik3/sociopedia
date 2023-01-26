@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sociopedia/static/css/main.2fab5d5b.css",
-    "main.js": "/sociopedia/static/js/main.1f9e3594.js",
+    "main.js": "/sociopedia/static/js/main.4704a590.js",
     "index.html": "/sociopedia/index.html",
     "main.2fab5d5b.css.map": "/sociopedia/static/css/main.2fab5d5b.css.map",
-    "main.1f9e3594.js.map": "/sociopedia/static/js/main.1f9e3594.js.map"
+    "main.4704a590.js.map": "/sociopedia/static/js/main.4704a590.js.map"
   },
   "entrypoints": [
     "static/css/main.2fab5d5b.css",
-    "static/js/main.1f9e3594.js"
+    "static/js/main.4704a590.js"
   ]
 }
