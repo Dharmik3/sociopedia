@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.2fab5d5b.css","mappings":"0FAEA,qBAME,4BAA+B,CAF/B,WAAY,CACZ,UAEF","sources":["index.css"],"sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');\n\nhtml,\nbody,\n#root,\n.App{\n  height: 100%;\n  width: 100%;\n  font-family: 'Rubik',sans-serif;\n}"],"names":[],"sourceRoot":""}
