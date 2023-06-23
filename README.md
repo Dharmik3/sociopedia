@@ -117,7 +117,9 @@ _For more examples, please refer to the [live link](https://dharmik3.github.io/s
 
 <img width="1200" alt="productsapi2" src="https://github.com/Dharmik3/sociopedia/blob/main/img2.png">
 <img width="1200" alt="productsapi2" src="https://github.com/Dharmik3/sociopedia/blob/main/img3.png">
-<img width="1200" alt="productsapi2" src="https://github.com/Dharmik3/sociopedia/blob/main/img4.png">
+<div align="center">
+<img width="400" alt="productsapi2" src="https://github.com/Dharmik3/sociopedia/blob/main/img4.png" >
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
