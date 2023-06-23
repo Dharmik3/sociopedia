@@ -74,28 +74,31 @@ const Form = () => {
     }
   };
 
-   const login = async (values, onSubmitProps) => {
-     const loggedInResponse = await fetch("http://localhost:5001/auth/login", {
-       method: "POST",
-       headers: { "Content-Type": "application/json" },
-       body: JSON.stringify(values),
-     });
-     const loggedIn = await loggedInResponse.json();
-     onSubmitProps.resetForm();
-     if (loggedIn) {
-       dispatch(
-         setLogin({
-           user: loggedIn.user,
-           token: loggedIn.token,
-         })
-       );
-       navigate("/home");
-     }
-   };
+  const login = async (values, onSubmitProps) => {
+    const loggedInResponse = await fetch(
+      "http://localhost:5001/auth/login",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      }
+    );
+    const loggedIn = await loggedInResponse.json();
+    onSubmitProps.resetForm();
+    if (loggedIn) {
+      dispatch(
+        setLogin({
+          user: loggedIn.user,
+          token: loggedIn.token,
+        })
+      );
+      navigate("/home");
+    }
+  };
 
   const handleFormSubmit = async (values, onSubmitProps) => {
-      if (isLogin) await login(values, onSubmitProps);
-      if (isRegister) await register(values, onSubmitProps);
+    if (isLogin) await login(values, onSubmitProps);
+    if (isRegister) await register(values, onSubmitProps);
   };
 
   return (
@@ -120,7 +123,9 @@ const Form = () => {
             gap="30px"
             gridTemplateColumns="repeat(4,minmax(0,1fr)"
             sx={{
-              "&>div": { gridColumn: isNonMobileScreens ? undefined : "span 4" },
+              "&>div": {
+                gridColumn: isNonMobileScreens ? undefined : "span 4",
+              },
             }}
           >
             {isRegister && (

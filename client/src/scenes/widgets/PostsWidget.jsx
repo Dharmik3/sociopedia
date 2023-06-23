@@ -23,6 +23,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
       headers: { Authorization: `Bearer ${token}` },
     });
     const data = await res.json();
+    console.log(data)
     dispatch(setPosts({ posts: data }));
   };
 
@@ -36,7 +37,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   return (
     <>
-      {posts.map(
+      {posts?posts.map(
         ({
           _id,
           userId,
@@ -62,7 +63,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
             comments={comments}
           />
         )
-      )}
+      ):<></>}
     </>
   );
 };
