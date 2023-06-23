@@ -107,16 +107,17 @@ Now you can test your url on your browser url
  ```js
    http://localhost:3000/
    ```
-
+Server is running on 5001 PORT
 
 _For more examples, please refer to the [live link](https://dharmik3.github.io/sociopedia/)_
 
 
 
-<img width="1440" alt="productsapi1" src="https://user-images.githubusercontent.com/78194918/208819054-9a03d08e-2b16-400a-a6ef-de5227b42242.png">
+<img width="1200" alt="productsapi1" src="https://github.com/Dharmik3/sociopedia/blob/main/img1.png">
 
-<img width="1425" alt="productsapi2" src="https://user-images.githubusercontent.com/78194918/208819058-6c4829f5-a45c-4301-8a49-d5425c7174d5.png">
-
+<img width="1200" alt="productsapi2" src="https://github.com/Dharmik3/sociopedia/blob/main/img2.png">
+<img width="1200" alt="productsapi2" src="https://github.com/Dharmik3/sociopedia/blob/main/img3.png">
+<img width="1200" alt="productsapi2" src="https://github.com/Dharmik3/sociopedia/blob/main/img4.png">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,13 +144,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Dharmik Patel - [@dharmik](https://twitter.com/dharmikS_patel) - dharmikpatel.pepalla@gmail.com
+Dharmik Patel - [@Dharmik](https://twitter.com/dharmikS_patel) - dharmikpatel.pepalla@gmail.com
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[product-screenshot-1]: https://github.com/Dharmik3/productsApi/blob/main/img/productsapi1.png
-[product-screenshot-2]: https://github.com/Dharmik3/productsApi/blob/main/img/productsapi2.png
+
 [Nodejs.com]: https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white
 [Nodejs-url]: https://nodejs.org 
 [express.com]: https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white
